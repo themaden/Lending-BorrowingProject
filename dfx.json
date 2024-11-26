@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "LendingBorrowing_backend": {
+      "main": "src/LendingBorrowing_backend/main.mo",
+      "type": "motoko"
+    },
+    "LendingBorrowing_frontend": {
+      "dependencies": [
+        "LendingBorrowing_backend"
+      ],
+      "source": [
+        "src/LendingBorrowing_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "LendingBorrowing_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
